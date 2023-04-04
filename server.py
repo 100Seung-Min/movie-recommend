@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    return 'hello'
+
+@app.route('/recommend')
+def recommend():
     movieName = request.args.get('movieName', 'The Dark Knight')
     result = recommendAI.callAi(movieName)
     if len(result) < 1 :
