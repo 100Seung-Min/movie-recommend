@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'hello'
+    return recommendAI.test()
 
 @app.route('/recommend')
 def recommend():

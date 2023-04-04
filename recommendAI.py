@@ -5,6 +5,9 @@ import json
 # 장르 가중치
 GENRE_WEIGHT = 0.1
 
+def test():
+    return 'hello'
+
 # 영화 장르 추출 함수
 def parse_genres(genres_str):
     genres = json.loads(genres_str.replace('\'', '"'))
